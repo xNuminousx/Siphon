@@ -1,0 +1,7 @@
+name: Siphon
+version: ${project.version}
+main: me.numin.siphon.Siphon
+api-version: 1.13
+depend: [ProjectKorra]
+authors: [Numin]
+description: Gain health for killing players and entities.
