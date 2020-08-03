@@ -6,7 +6,7 @@
 
     <groupId>me.numin</groupId>
     <artifactId>Siphon</artifactId>
-    <version>0.1</version>
+    <version>0.2</version>
     <packaging>jar</packaging>
 
     <name>Siphon</name>
@@ -69,14 +69,14 @@
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
-            <version>1.15.2-R0.1-SNAPSHOT</version>
+            <version>1.16.1-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>com.projectkorra</groupId>
             <artifactId>projectkorra</artifactId>
-            <version>1.8.4.39</version>
+            <version>1.8.4.43</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
