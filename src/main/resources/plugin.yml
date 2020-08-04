@@ -5,3 +5,7 @@ api-version: 1.16
 depend: [ProjectKorra]
 authors: [Numin]
 description: Gain health for killing players and entities.
+
+permissions:
+  bendingsiphon.heal:
+    default: true
