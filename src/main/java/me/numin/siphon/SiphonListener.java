@@ -21,6 +21,9 @@ public class SiphonListener implements Listener {
         if (killer.isDead() || killer.getHealth() >= 20)
             return;
 
+        if (!killer.hasPermission("bendingsiphon.heal"))
+            return;
+
         healKiller(killer, entity);
     }
 
