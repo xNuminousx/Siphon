@@ -27,7 +27,7 @@ public class SiphonListener implements Listener {
     private void healKiller(Player killer, Entity entity) {
         double healAmount = toHealAmount(killer.getHealth(), entity instanceof Player ? Config.getPlayerKillAmount() : Config.getEntityKillAmount());
         killer.setHealth(killer.getHealth() + healAmount);
-        killer.getWorld().spawnParticle(Particle.HEART, killer.getLocation().add(0, 1.7, 0), 1, 0, 0, 0);
+        if (Config.playAnimation()) killer.getWorld().spawnParticle(Particle.HEART, killer.getLocation().add(0, 1.7, 0), 1, 0, 0, 0);
         if (Config.canSendHealMessage()) killer.sendMessage(ChatColor.GREEN + "" + ChatColor.ITALIC + "+" + healAmount / 2);
     }
 

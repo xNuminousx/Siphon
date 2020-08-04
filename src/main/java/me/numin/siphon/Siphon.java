@@ -11,12 +11,12 @@ public final class Siphon extends JavaPlugin {
         plugin = this;
         new Config();
         getServer().getPluginManager().registerEvents(new SiphonListener(), plugin);
-        getLogger().info("Successfully enabled " + getName() + ".");
+        getLogger().info("Successfully enabled " + getName());
     }
 
     @Override
     public void onDisable() {
-        getLogger().info("Successfully disabled " + getName() + ".");
+        getLogger().info("Successfully disabled " + getName());
     }
 
     public static Siphon getPlugin() {

@@ -32,6 +32,7 @@ public class Config {
         config.addDefault("HealthRegenerationAmount.OnEntityKill", 2);
         config.addDefault("HealthRegenerationAmount.OnPlayerKill", 4);
         config.addDefault("SendHealMessage", true);
+        config.addDefault("PlayAnimation", true);
 
         config.options().copyDefaults(true);
         plugin.saveConfig();
@@ -39,6 +40,7 @@ public class Config {
 
     public static List<String> getEnabledWorlds() { return plugin.getConfig().getStringList("EnabledWorlds"); }
     public static boolean canSendHealMessage() { return plugin.getConfig().getBoolean("SendHealMessage"); }
+    public static boolean playAnimation() { return plugin.getConfig().getBoolean("PlayAnimation"); }
     public static double getEntityKillAmount() { return plugin.getConfig().getDouble("HealthRegenerationAmount.OnEntityKill"); }
     public static double getPlayerKillAmount() { return plugin.getConfig().getDouble("HealthRegenerationAmount.OnPlayerKill"); }
 }
