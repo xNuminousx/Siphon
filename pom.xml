@@ -76,7 +76,7 @@
         <dependency>
             <groupId>com.projectkorra</groupId>
             <artifactId>projectkorra</artifactId>
-            <version>1.8.4.43</version>
+            <version>1.8.9</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
